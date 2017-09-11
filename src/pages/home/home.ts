@@ -7,7 +7,7 @@ import { PersonsPage } from "../persons/persons";
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+public pushPage = "HeroesPage";
   tabPersons:Array<any> = [
     {
       nom : "Albino",

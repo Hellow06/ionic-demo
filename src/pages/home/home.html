@@ -7,9 +7,10 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+  <!-- <ion-list>
     <ion-item *ngFor="let p of tabPersons" (click)="goToPerson(p)">
           {{p.nom}} {{p.prenom}}
     </ion-item>
-  </ion-list>
+  </ion-list> -->
+  <button ion-button [navPush]="pushPage">Default</button>
 </ion-content>
