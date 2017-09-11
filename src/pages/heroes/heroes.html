@@ -1,0 +1,25 @@
+<!--
+  Generated template for the HeroesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Heroes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let hero of heros" (click)="itemSelected(hero)">
+      <ion-avatar item-start>
+        <img src="{{hero.imageUrl}}">
+      </ion-avatar>
+      {{hero.name}}
+    </button>
+  </ion-list>
+</ion-content>
